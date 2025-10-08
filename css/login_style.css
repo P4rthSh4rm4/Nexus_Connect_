@@ -1,0 +1,136 @@
+/*
+ * Custom CSS for Theming and Layout
+ * File: style.css
+ * Theme: Black/Green Gradient
+ */
+
+/* Black/Green Gradient Background */
+.nexus-login-body {
+    background: linear-gradient(135deg, #0f0f0f, #001a00, #0a0a0a);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* Default text color for the body */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* Good practice font stack */
+}
+
+/* Card container style */
+.nexus-login-card {
+    background-color: #1a1a1a; /* Darker background for the card */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    max-width: 450px; /* Limit card width */
+    width: 100%;
+}
+
+/* Header/Title styles */
+.nexus-header-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+/* Sub-text styles */
+.nexus-sub-text {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Input field styling */
+.nexus-form-control {
+    background-color: #2b2b2b;
+    border: 1px solid #444444;
+    color: #ffffff;
+    height: 45px;
+}
+
+.nexus-form-control::placeholder {
+    color: #6a6a6a;
+}
+
+.nexus-form-control:focus {
+    background-color: #2b2b2b;
+    border-color: #00ff66; /* Bright green focus border */
+    box-shadow: 0 0 0 0.25rem rgba(0, 255, 102, 0.25);
+    color: #ffffff;
+}
+
+/* Sign In Button */
+.nexus-sign-in-btn {
+    /* Retaining the original button's vibrant purple/pink gradient */
+    background: linear-gradient(90deg, #5e009e, #a700ff); 
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    width: 100%;
+    height: 50px;
+}
+
+.nexus-sign-in-btn:hover {
+    background: linear-gradient(90deg, #7c00d6, #c233ff);
+}
+
+/* Demo Accounts Section */
+.nexus-demo-accounts {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333333;
+}
+
+.nexus-demo-header {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Demo Button Styling */
+.nexus-demo-btn {
+    background-color: #2b2b2b;
+    color: #b0b0b0;
+    border: 1px solid #444444;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin: 5px 0; /* Vertical margin for spacing in flex */
+    transition: all 0.2s ease;
+    text-decoration: none;
+    flex-grow: 1; /* Allows buttons to share space */
+    text-align: center;
+    min-width: 90px; /* Ensure a minimum size */
+}
+
+.nexus-demo-btn:hover {
+    background-color: #444444;
+    color: #ffffff;
+    border-color: #00ff66;
+}
+
+/* Icon styling */
+.nexus-logo-icon {
+    /* Mimics the vibrant icon in the image */
+    background: linear-gradient(135deg, #a700ff, #00ff66);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem; 
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Layout for demo buttons using Flexbox */
+.nexus-btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+}

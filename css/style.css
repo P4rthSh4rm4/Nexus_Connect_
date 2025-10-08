@@ -1,0 +1,429 @@
+/* ------------------------------------ */
+/* 1. GLOBAL STYLES & BACKGROUND */
+/* ------------------------------------ */
+
+body {
+    /* A very dark grey/black for the background */
+    background-color: #121212; 
+    color: #e0e0e0; /* Light grey text color */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh; /* Ensure full viewport height */
+    padding: 50px 0; /* Vertical padding */
+    /* Add subtle green radial gradient effects */
+    background-image: radial-gradient(circle at 50% 10%, rgba(0, 255, 0, 0.1), transparent 50%),
+                      radial-gradient(circle at 90% 90%, rgba(0, 150, 0, 0.08), transparent 50%);
+}
+
+/* ------------------------------------ */
+/* 2. HEADER & TITLE STYLES */
+/* ------------------------------------ */
+
+/* Styling for the main logo/icon to replicate the gradient square effect */
+.logo-icon {
+    width: 80px;
+    height: 80px;
+    /* Richer Green to Teal Gradient */
+    background: linear-gradient(135deg, #008000, #00ced1); 
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Subtle green glow */
+    box-shadow: 0 0 20px rgba(0, 196, 0, 0.5); 
+}
+
+/* The smaller white icon inside the logo square */
+.logo-icon img {
+    width: 50px;
+    height: 50px;
+    /* Forces the local icon image to be white */
+    filter: brightness(0) invert(1); 
+}
+
+/* Main Title text gradient */
+.main-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    /* Text gradient effect (Darker Green to Bright Green) */
+    background: linear-gradient(90deg, #008000, #39ff14);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* ------------------------------------ */
+/* 3. BUTTON STYLES (CTAs) */
+/* ------------------------------------ */
+
+/* Primary button (Get Started) */
+.btn-primary-custom {
+    background-color: #39ff14; /* Bright Neon Green */
+    border-color: #39ff14;
+    padding: 10px 30px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: #00b300; /* Darker green on hover */
+    border-color: #00b300;
+    transform: translateY(-2px);
+}
+
+/* Outline button (Sign In) */
+.btn-outline-custom {
+    background-color: transparent;
+    border: 1px solid #4a4a4a; /* Dark grey border */
+    color: #e0e0e0; /* Light grey text */
+    padding: 10px 30px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+    border-color: #39ff14; /* Bright Green border on hover */
+    color: #39ff14; /* Bright Green text on hover */
+}
+
+
+/* ------------------------------------ */
+/* 4. FEATURE CARD STYLES */
+/* ------------------------------------ */
+
+.feature-card {
+    /* Slightly lighter dark background for cards */
+    background-color: #1a1a1a; 
+    /* Subtle border */
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    border-radius: 12px;
+    padding: 20px;
+    /* Ensure a consistent height for the card blocks */
+    min-height: 200px; 
+    transition: all 0.3s ease;
+}
+
+/* Subtle hover effect for the cards */
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(57, 255, 20, 0.15); /* Green shadow on hover */
+}
+
+/* Icon container styling inside the feature cards (NOW WITH GRADIENT) */
+.card-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+    /* Green gradient for the icon block (Dark Green to Neon Green) */
+    background: linear-gradient(45deg, #008000, #39ff14);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icon image inside the gradient block */
+.card-icon img {
+    width: 20px;
+    height: 20px;
+    /* Forces the local icon image to be white */
+    filter: brightness(0) invert(1); 
+}
+
+/* Feature card title styling */
+.feature-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Feature card description styling */
+.feature-description {
+    color: #a0a0a0; /* Slightly darker grey for descriptions */
+    font-size: 0.9rem;
+}
+
+
+
+/*
+ * Custom CSS for Theming and Layout
+ * File: style.css
+ * Theme: Dark with Green Hover Effects
+ */
+
+/* Black/Green Gradient Background */
+.nexus-login-body {
+    background: linear-gradient(135deg, #0f0f0f, #001a00, #0a0a0a);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Card container style */
+.nexus-login-card {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 30px;
+    /* Lime green box shadow */
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.4); 
+    max-width: 380px; 
+    width: 100%;
+}
+
+/* Header/Title styles */
+.nexus-header-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+/* Sub-text styles */
+.nexus-sub-text {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Input field styling */
+.nexus-form-control {
+    background-color: #2b2b2b;
+    border: 1px solid #444444;
+    color: #ffffff;
+    height: 45px;
+}
+
+.nexus-form-control::placeholder {
+    color: #6a6a6a;
+}
+
+.nexus-form-control:focus {
+    background-color: #2b2b2b;
+    border-color: #00ff66; /* Bright green focus border */
+    box-shadow: 0 0 0 0.25rem rgba(0, 255, 102, 0.25);
+    color: #ffffff;
+}
+
+/* --- MODIFIED: Sign In Button - Dark Default, Green on Hover --- */
+.nexus-sign-in-btn {
+    background-color: #2b2b2b; /* Dark default background */
+    border: 1px solid #444444; /* Subtle border */
+    color: #ffffff; 
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease; /* Smooth transition for hover */
+    width: 100%;
+    height: 50px;
+}
+
+.nexus-sign-in-btn:hover {
+    background: linear-gradient(90deg, #008000, #00b300); /* Green gradient on hover */
+    border-color: #00ff66;
+    box-shadow: 0 5px 15px rgba(0, 179, 0, 0.4); /* Green shadow on hover */
+}
+
+/* Demo Accounts Section */
+.nexus-demo-accounts {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333333;
+}
+
+.nexus-demo-header {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* --- MODIFIED: Demo Button Styling - Dark Default, Green on Hover --- */
+.nexus-demo-btn {
+    background-color: #2b2b2b; /* Dark default background */
+    color: #b0b0b0; /* Light gray text */
+    border: 1px solid #444444;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin: 5px 0;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+    min-width: 90px;
+}
+
+.nexus-demo-btn:hover {
+    background-color: #008000; /* Solid green on hover */
+    color: #ffffff; /* White text on green background */
+    border-color: #00ff66;
+}
+
+/* Icon styling */
+.nexus-logo-icon {
+    /* Kept original vibrant icon */
+    background: linear-gradient(135deg, #a700ff, #00ff66);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem; 
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Layout for demo buttons using Flexbox */
+.nexus-btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.student-main-content {
+    min-height: calc(100vh - 120px);
+}
+
+/* --- IMAGE STYLES ADDED --- */
+.student-logo-icon {
+    width: 30px; /* Adjust size as needed for your logo image */
+    height: 30px;
+    filter: brightness(0) invert(1); /* Optional: Forces the image to white/light for dark mode */
+}
+
+.student-nav-icon {
+    width: 18px; /* Standard icon size */
+    height: 18px;
+    vertical-align: middle; /* Align icon with text */
+    filter: grayscale(100%) brightness(0) invert(1) opacity(0.6); /* Initially dim and white/light */
+    transition: filter 0.2s ease-in-out;
+}
+/* -------------------------- */
+
+/* Header & Navigation Styles */
+.student-header {
+    background-color: #161623;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.student-portal-text {
+    font-size: 0.8rem;
+    color: #9fa5b4;
+}
+
+.student-navbar {
+    background-color: #161623;
+    padding: 0 1rem;
+}
+
+.student-navbar .nav-link {
+    color: #9fa5b4;
+    padding: 1rem 1.5rem;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.student-navbar .nav-link:hover {
+    color: #59d19a; /* Lighter Green for hover */
+}
+
+.student-navbar .nav-link:hover .student-nav-icon {
+    filter: brightness(100%) opacity(1) drop-shadow(0 0 5px rgba(89, 209, 154, 0.5)); /* Brighten on hover */
+}
+
+.student-active-link {
+    color: #ffffff !important;
+    border-bottom-color: #37a77d; /* Main Green accent */
+    font-weight: bold;
+}
+
+.student-active-link .student-nav-icon {
+    filter: brightness(100%) opacity(1); /* Make active icon fully bright */
+}
+
+/* Main Content Styles (rest of the code remains the same) */
+.text-muted {
+    color: #9fa5b4 !important;
+}
+
+.student-text-light-prose {
+    color: #c0c4cd !important;
+}
+
+/* Filter Dropdown */
+.student-filter-dropdown {
+    color: #ffffff !important;
+    border-color: #252535 !important;
+    background-color: #252535 !important;
+}
+.student-filter-dropdown:hover {
+    background-color: #353547 !important;
+    border-color: #353547 !important;
+}
+
+/* Notice Card Styles */
+.student-card {
+    background-color: #252535;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.student-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Tags (Badges) Styles */
+.badge {
+    padding: 0.4em 0.8em;
+    font-size: 0.75em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.student-tag-academic {
+    background-color: rgba(55, 167, 125, 0.2); 
+    color: #59d19a; 
+}
+
+.student-tag-urgent {
+    background-color: rgba(255, 77, 79, 0.2);
+    color: #ff4d4f;
+}
+
+.student-tag-scholarship {
+    background-color: rgba(250, 219, 20, 0.2);
+    color: #fadb14;
+}
+
+.student-tag-placement {
+    background-color: rgba(24, 144, 255, 0.2);
+    color: #1890ff;
+}
+
+.student-tag-co-curricular {
+    background-color: rgba(250, 140, 22, 0.2);
+    color: #fa8c16;
+}
+
+/* Override Bootstrap Dark Dropdown for filter */
+.dropdown-menu-dark {
+    background-color: #252535;
+    border-color: #161623;
+}
+
+.dropdown-menu-dark .dropdown-item:hover {
+    background-color: #37a77d;
+}

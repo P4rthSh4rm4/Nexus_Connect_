@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Digital Notice Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar navbar-expand-lg student-header text-white px-4 py-3">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <img src="image/high-quality.png" alt="Institute Logo" class="student-logo-icon me-2">
+                <div>
+                    <span class="fw-bold fs-5">Nexus Connect</span>
+                    <div class="student-portal-text">Student Portal</div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="text-end me-3 d-none d-sm-block">
+                    <span class="d-block fw-bold">Parth Sharma</span>
+                    <a href="mailto:johndoe@email.com" class="text-white text-decoration-none small">parth@email.com</a>
+                </div>
+                <i class="fas fa-user-circle fs-3"></i>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg student-navbar px-4 py-2">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">
+                        <a class="nav-link student-active-link" href="#">
+                            <img src="image/bell (1).png" alt="Notices" class="student-nav-icon me-1"> Notices
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="image/high-quality.png" alt="Notes" class="student-nav-icon me-1"> Notes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/certi.html">
+                            <img src="image/scholar.png" alt="Certificates" class="student-nav-icon me-1"> Certificates
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="image/growth-chart.png" alt="Projects" class="student-nav-icon me-1"> Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/placement .html">
+                            <img src="image/multiple-users-silhouette.png" alt="Placements" class="student-nav-icon me-1"> Placements
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="image/bell (1).png" alt="Attendance" class="student-nav-icon me-1"> Attendance
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="image/html.png" alt="Learn" class="student-nav-icon me-1"> Learn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid px-4 py-4 student-main-content">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h1 class="text-white fs-3 fw-bold">Digital Notice Board</h1>
+                <p class="text-muted mb-0">Stay updated with latest announcements</p>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-outline-secondary dropdown-toggle text-white border-secondary student-filter-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-list-ul me-1"></i> All Categories
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Academic</a></li>
+                    <li><a class="dropdown-item" href="#">Urgent</a></li>
+                    <li><a class="dropdown-item" href="#">Scholarship</a></li>
+                    <li><a class="dropdown-item" href="#">Placement</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card student-card h-100 p-3">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold text-white mb-0">Hackathon</h5>
+                        <span class="badge student-tag-academic">
+                            <i class="fas fa-graduation-cap me-1"></i> academic
+                        </span>
+                    </div>
+                    <p class="card-subtitle text-muted small mb-2"><i class="far fa-calendar me-1"></i> October 3rd, 2025</p>
+                    <p class="card-text student-text-light-prose">Respected Sir/Madam, Greetings from Shivalik College of Engineering (SCE). We are delighted to inform you that Shivalik College of Engineering, accredited with NAAC A+ ...</p>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card student-card h-100 p-3">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold text-white mb-0">SIH</h5>
+                        <span class="badge student-tag-urgent">
+                            <i class="fas fa-exclamation-triangle me-1"></i> urgent
+                        </span>
+                    </div>
+                    <p class="card-subtitle text-muted small mb-2"><i class="far fa-calendar me-1"></i> October 2nd, 2025</p>
+                    <p class="card-text student-text-light-prose">Respected Sir/Madam, Greetings from Shivalik College of Engineering (SCE). We are delighted to inform you that Shivalik College of Engineering, accredited with NAAC A+ ...</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card student-card h-100 p-3">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold text-white mb-0">Merit Scholarship Applications</h5>
+                        <span class="badge student-tag-scholarship">
+                            <i class="fas fa-book-reader me-1"></i> scholarship
+                        </span>
+                    </div>
+                    <p class="card-subtitle text-muted small mb-2"><i class="far fa-calendar me-1"></i> October 2nd, 2025</p>
+                    <p class="card-text student-text-light-prose">Applications for 2025 merit scholarships are now open. Submit your documents by Oct 31 to be considered.</p>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card student-card h-100 p-3">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold text-white mb-0">Important: Semester Exam Schedule</h5>
+                        <span class="badge student-tag-academic">
+                            <i class="fas fa-graduation-cap me-1"></i> academic
+                        </span>
+                    </div>
+                    <p class="card-subtitle text-muted small mb-2"><i class="far fa-calendar me-1"></i> October 2nd, 2025</p>
+                    <p class="card-text student-text-light-prose">Semester end examinations will commence from Nov 25. Detailed timetable is attached in the portal. Please check and prepare accordingly.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card student-card h-100 p-3">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold text-white mb-0">Campus Placement Drive - Tech Giants</h5>
+                        <span class="badge student-tag-placement">
+                            <i class="fas fa-briefcase me-1"></i> placement
+                        </span>
+                    </div>
+                    <p class="card-subtitle text-muted small mb-2"><i class="far fa-calendar me-1"></i> October 2nd, 2025</p>
+                    <p class="card-text student-text-light-prose">Registration is open for Google, Microsoft, and Amazon campus placements. Ensure your profile is complete and eligibility criteria met.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card student-card h-100 p-3">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold text-white mb-0">Scholarship Applications Open</h5>
+                        <span class="badge student-tag-scholarship">
+                            <i class="fas fa-book-reader me-1"></i> scholarship
+                        </span>
+                    </div>
+                    <p class="card-subtitle text-muted small mb-2"><i class="far fa-calendar me-1"></i> October 1st, 2025</p>
+                    <p class="card-text student-text-light-prose">Merit-based and need-based scholarships are now open for applications. Deadline: March 31st.</p>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card student-card h-100 p-3">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold text-white mb-0">Important Semester Exam Schedule</h5>
+                        <span class="badge student-tag-academic">
+                            <i class="fas fa-graduation-cap me-1"></i> academic
+                        </span>
+                    </div>
+                    <p class="card-subtitle text-muted small mb-2"><i class="far fa-calendar me-1"></i> October 1st, 2025</p>
+                    <p class="card-text student-text-light-prose">Final semester exams will be conducted from March 15-30. Please check the detailed timetable on the portal.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card student-card h-100 p-3">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold text-white mb-0">Campus Placement Drive - Tech Giants</h5>
+                        <span class="badge student-tag-placement">
+                            <i class="fas fa-briefcase me-1"></i> placement
+                        </span>
+                    </div>
+                    <p class="card-subtitle text-muted small mb-2"><i class="far fa-calendar me-1"></i> October 1st, 2025</p>
+                    <p class="card-text student-text-light-prose">Microsoft, Google, and Amazon will be visiting campus next month for campus placements. Eligible students please register.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card student-card h-100 p-3">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold text-white mb-0">Annual Tech Fest - CodeStorm 2025</h5>
+                        <span class="badge student-tag-co-curricular">
+                            <i class="fas fa-code me-1"></i> co curricular
+                        </span>
+                    </div>
+                    <p class="card-subtitle text-muted small mb-2"><i class="far fa-calendar me-1"></i> October 1st, 2025</p>
+                    <p class="card-text student-text-light-prose">Join us for the biggest tech fest! Register for coding competitions, hackathons, and workshops. Prizes worth $50,000.</p>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card student-card h-100 p-3">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold text-white mb-0">Library System Maintenance</h5>
+                        <span class="badge student-tag-urgent">
+                            <i class="fas fa-exclamation-triangle me-1"></i> urgent
+                        </span>
+                    </div>
+                    <p class="card-subtitle text-muted small mb-2"><i class="far fa-calendar me-1"></i> September 30th, 2025</p>
+                    <p class="card-text student-text-light-prose">The Online Library portal will undergo scheduled maintenance from 10 PM to 6 AM on Oct 5th. Access to digital resources will be temporarily unavailable.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card student-card h-100 p-3">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold text-white mb-0">Project Submission Deadline</h5>
+                        <span class="badge student-tag-academic">
+                            <i class="fas fa-graduation-cap me-1"></i> academic
+                        </span>
+                    </div>
+                    <p class="card-subtitle text-muted small mb-2"><i class="far fa-calendar me-1"></i> September 30th, 2025</p>
+                    <p class="card-text student-text-light-prose">Final B.Tech project reports must be uploaded to the dedicated repository by 5:00 PM on November 15th. No extensions will be granted.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card student-card h-100 p-3">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold text-white mb-0">Startup Idea Pitch Day</h5>
+                        <span class="badge student-tag-co-curricular">
+                            <i class="fas fa-code me-1"></i> co curricular
+                        </span>
+                    </div>
+                    <p class="card-subtitle text-muted small mb-2"><i class="far fa-calendar me-1"></i> September 29th, 2025</p>
+                    <p class="card-text student-text-light-prose">The incubation center is hosting a pitch day for student startup ideas. Investors will be present. Register your team online by the end of the week.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card student-card h-100 p-3">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold text-white mb-0">Resume & Interview Workshop</h5>
+                        <span class="badge student-tag-placement">
+                            <i class="fas fa-briefcase me-1"></i> placement
+                        </span>
+                    </div>
+                    <p class="card-subtitle text-muted small mb-2"><i class="far fa-calendar me-1"></i> September 29th, 2025</p>
+                    <p class="card-text student-text-light-prose">Mandatory workshop for all final year students preparing for campus interviews. Covers resume building and mock interview sessions. Check your email for location.</p>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card student-card h-100 p-3">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold text-white mb-0">Fee Payment Reminder</h5>
+                        <span class="badge student-tag-urgent">
+                            <i class="fas fa-exclamation-triangle me-1"></i> urgent
+                        </span>
+                    </div>
+                    <p class="card-subtitle text-muted small mb-2"><i class="far fa-calendar me-1"></i> September 28th, 2025</p>
+                    <p class="card-text student-text-light-prose">This is a final reminder to clear all outstanding tuition and hostel fees by October 10th. Failure to do so will result in access restrictions.</p>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card student-card h-100 p-3">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title fw-bold text-white mb-0">New Research Internships</h5>
+                        <span class="badge student-tag-academic">
+                            <i class="fas fa-graduation-cap me-1"></i> academic
+                        </span>
+                    </div>
+                    <p class="card-subtitle text-muted small mb-2"><i class="far fa-calendar me-1"></i> September 27th, 2025</p>
+                    <p class="card-text student-text-light-prose">The Computer Science department has announced new research internship opportunities under Prof. Sharma. Interested students should apply through the Research tab.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
